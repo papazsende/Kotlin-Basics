@@ -97,6 +97,7 @@ fun ifStatements(){
 
 fun seasons(){
 
+    // using when statement to determine the season
     var season = 5
 
     when(season){
@@ -109,5 +110,16 @@ fun seasons(){
         4 -> println("it's winter")
         else -> println("invalid season")
 
+    }
+    //in this example we will look at a range of months to determine which season we're in
+
+    val month = 8
+
+    when(month){
+
+        in 3..5 -> println("its spring")
+        in 6..8 -> println("its summer")
+        in 9..11 -> println("its autumn")
+        12,1,2 -> println("its winter") // when using commas you can use multiple conditions for comparison
     }
 }
