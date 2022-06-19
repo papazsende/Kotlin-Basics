@@ -97,7 +97,7 @@ fun ifStatements(){
 
 fun seasons(){
 
-    var season = 3
+    var season = 5
 
     when(season){
         1 -> println("it's sprint")
@@ -107,6 +107,7 @@ fun seasons(){
             println("or you autumn if you are british")
         }
         4 -> println("it's winter")
+        else -> println("invalid season")
 
     }
 }
