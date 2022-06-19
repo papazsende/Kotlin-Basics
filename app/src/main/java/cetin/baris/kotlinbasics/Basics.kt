@@ -16,7 +16,7 @@ fun basics(){
     var myLong : Long = 54654654654
     var myBool : Boolean = true
     var myChar : Char = 'B'
-    var myFloat = 3.14
+    var myFloat = 3.14F
     /*
     The difference between val and var is val is an immutable variable type that
     you cannot change the value later on. Var however can be reassigned
@@ -92,5 +92,5 @@ fun ifStatements(){
     }else{
         println("Person two is taller ${personTwo - personOne} centimeters than person one")
     }
-    print("benim adım $personOne ")
+
 }
