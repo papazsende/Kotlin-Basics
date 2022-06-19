@@ -3,7 +3,7 @@ package cetin.baris.kotlinbasics
 //main function is the main application function that initially runs
 fun main(){
 
-    ifStatements()
+    seasons()
 }
 // by using fun we are creating functions
 
@@ -93,4 +93,20 @@ fun ifStatements(){
         println("Person two is taller ${personTwo - personOne} centimeters than person one")
     }
 
+}
+
+fun seasons(){
+
+    var season = 3
+
+    when(season){
+        1 -> println("it's sprint")
+        2 -> println("it's summer")
+        3 -> {
+            println("its fall")
+            println("or you autumn if you are british")
+        }
+        4 -> println("it's winter")
+
+    }
 }
