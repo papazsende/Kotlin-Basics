@@ -3,7 +3,7 @@ package cetin.baris.kotlinbasics
 //main function is the main application function that initially runs
 fun main(){
 
-    seasons()
+    loops()
 }
 // by using fun we are creating functions
 
@@ -122,4 +122,51 @@ fun seasons(){
         in 9..11 -> println("its autumn")
         12,1,2 -> println("its winter") // when using commas you can use multiple conditions for comparison
     }
+}
+/* --------------------------------------------------------------------------------------------------------
+Loops are created to run a specific code section for desired duration or until preferred condition is met
+
+in this section we will take a look at while and for loops ->
+
+While loop executes a block of code repeatedly as long as given condition is met
+ */
+fun loops(){
+
+    // for example let's take x as an integer variable with value of 1, in this case our condition will be x<=10
+    // as long as we keep the value below 10, code will repeatedly execute itself
+
+    /*
+    var x = 1
+    while(x<=10){
+        print("code is running")
+    }
+
+    ---> this code will continue to run unless we stop it
+     */
+
+    // if we increase the value of x each time the code runs, then value of x will eventually be higher than 10, and condition will be unmet.
+    var x = 1
+    while(x<=10){
+        //println("code is running and the value of x is $x")
+        x++
+    }
+    // in this case, code will stop running after x gets higher than 10
+    println("loop is complete")
+
+    //when using print command using "\n" indicates a line break;
+
+    /* ---------------- QUIZ --------------------
+    create a while loop that prints out every number descending from 100
+
+    ---------------ANSWER ------------------------
+    var a = 100
+    while(a>=0){
+        print(a)
+        a--
+    }
+    print("\nSecond loops is done!")
+     */
+
+
+
 }
