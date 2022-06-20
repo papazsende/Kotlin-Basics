@@ -199,7 +199,18 @@ fun loops(){
     }
     println("second loop ended")
 
+    for(num in 0..10000){
+        if(num == 9000){
+            println("Wow it's over 9000!")
+        }
+    }
+    println("loop ended")
 
+    var t = 0
+    for (y in 0..9) {
+        t += y
+    }
 
+    println("$t")
 
 }
