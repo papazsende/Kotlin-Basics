@@ -3,7 +3,15 @@ package cetin.baris.kotlinbasics
 //main function is the main application function that initially runs
 fun main(){
 
-    loops()
+    /*addUp(12,21)
+
+
+    var returnedvalue = addingUp(2,5) //a and b here are arguments
+    println("returned value is $returnedvalue")
+
+
+     */
+    nullables()
 }
 // by using fun we are creating functions
 
@@ -212,5 +220,53 @@ fun loops(){
     }
 
     println("$t")
+
+}
+// ------------------------------ Functions ----------------------------------------------------
+
+
+/* in this section we will take a look at functions, parameters and arguments
+   there are two options that we can create a function, one that returns a value, and one that executes a code
+ */
+
+
+fun addUp(a: Int ,b: Int){ //a and b here are parameters
+
+    var result = a + b
+    println("result of the calculation is $result")
+    //this executes a code
+}
+
+fun addingUp(a: Int ,b: Int) :Int{
+
+    return  a + b
+
+    //this returns a value
+}
+
+fun nullables(){
+/* Sometimes a variable may end up null, so in order to avoid exceptions we can define some variables as nullables using "?"
+
+ */
+
+    var name : String = "Baris" //name variable is string and cannot be assigned null
+    // name = null statement gives compilation error
+    var nullablename : String? = "Baris"
+    //nullablename = null // adding ? makes this variable type nullable and can be assigned null
+
+    //var lenght = nullablename.length() // gives error even if the data type is nullable, we have to add ? to the name
+    var lenght = nullablename?.length
+    //in old fashion way we can use an if statement to check if the variable is null
+
+    if(nullablename!=null){
+        var lenght = nullablename.length
+    }else{
+        null
+    }
+    //elvis operator is used to give a predefined value to the variable if its null
+
+    var guestname = nullablename ?: "Guest"
+    print(guestname)
+
 
 }
