@@ -141,6 +141,7 @@ fun loops(){
         print("code is running")
     }
 
+
     ---> this code will continue to run unless we stop it
      */
 
@@ -159,13 +160,45 @@ fun loops(){
     create a while loop that prints out every number descending from 100
 
     ---------------ANSWER ------------------------
+    */
     var a = 100
+
     while(a>=0){
         print(a)
         a--
     }
     print("\nSecond loops is done!")
+
+
+    // DO WHILE LOOP ---------------->
+
+    var y = 1
+    do{
+        println("Value of y is $y")
+        y++
+    }while(y<=10)
+    /* !!! do while loops runs code at least one and then checks if the condition is met. So if you give x 15 for example, code will print value of x
+    which is 15 and then check the condition criteria.
+    */
+
+    // --------------- FOR LOOP ---------------->
+    /*
+    for loops are similar to while loops but instead of increasing the value of counter manually, loop itself increases the value automatically
+    and we don't have to create a counter variable
      */
+
+     for(num in 1..10){
+         println("value of num variable is $num")
+     }
+    println("for loop ended")
+
+    // another iteration of for loops is using until ->
+
+    for(i in 1 until 10){
+        println("value of i variable is $i")
+    }
+    println("second loop ended")
+
 
 
 
