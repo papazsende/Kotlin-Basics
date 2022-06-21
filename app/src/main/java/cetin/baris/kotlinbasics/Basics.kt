@@ -11,7 +11,6 @@ fun main(){
 
 
      */
-    nullables()
 }
 // by using fun we are creating functions
 
