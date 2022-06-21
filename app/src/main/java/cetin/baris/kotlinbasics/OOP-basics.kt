@@ -10,8 +10,8 @@ fun main(){
     myPhone3.showState()
     myPhone1.showState()
 
-    //myPhone1.fixPhone()
-    myPhone1.state = "rusty"
+    myPhone1.fixPhone()
+    //myPhone1.state = "rusty" since state variable is private, we cannot reach it from main class
     myPhone1.showState()
 
 
@@ -24,16 +24,16 @@ class MobilePhone constructor(osName : String, brand : String, model : String, s
         println("a new mobile phone created os name : $osName brand : $brand  model : $model")
         this.osName = osName
     }
-    var state : String? = state ?: "good condition"
+    private var state : String? = state ?: "good condition"
     var model : String = model
     fun showState(){
         println(" $osName phone $model is $state")
     }
-    /*
+
     fun fixPhone(){
-        state = "fixed"
+        this.state = "fixed"
     }
-    or instead of using a method to fix phone we can reach out the member variable state and modify it; see line 14
-     */
+    //or instead of using a method to fix phone we can reach out the member variable state and modify it; see line 14
+
 
 }
