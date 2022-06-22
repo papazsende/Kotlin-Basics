@@ -19,11 +19,11 @@ fun main(){
 class user constructor(userName : String,userLastName : String,licencePlate : String,member : Boolean){
 
     private var balance : Int = 0
-    private var totalFine : Int = 0
+    var totalFine : Int = 0
     var userName = userName
     var userLastName = userLastName
     var member = member
-    var fine = passagePrice
+    private var fine = passagePrice
         get(){
             if(member){
                 return field
@@ -31,6 +31,11 @@ class user constructor(userName : String,userLastName : String,licencePlate : St
                 return field*2
             }
         }
+    init{
+        println("user created with name $userName ")
+
+    }
+
 
     // user adds money to his/her/them/they/their account balance
 

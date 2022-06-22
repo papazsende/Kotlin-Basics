@@ -15,7 +15,6 @@ fun main(){
     myPhone1.showState()
 
 
-
 }
 
 class MobilePhone constructor(osName : String, brand : String, model : String, state:String?){
